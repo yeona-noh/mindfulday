@@ -1,0 +1,43 @@
+.single-vid {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 0;
+    margin-left: 4rem;
+    margin-right: 0;
+}
+.thumbnail {
+    min-width: 40rem;
+    margin-top: 0.8rem;
+    height: 25rem;
+    margin-right: 5rem;
+    border-radius: 5px;
+}
+.vid-detail-wrapper {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 5rem;
+    min-width: 35rem;
+}
+.current-vid-title {
+    color: var(--accent-color);
+    font-size: 3rem;
+    margin-top: 0;
+    padding-top: 0;
+}
+.current-vid-description {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+.current-vid-length {
+    color: var(--accent-color);
+}
+.reg-play-btn {
+    background-color: var(--accent-color);
+    color: var(--base_color);
+    min-width: 30rem;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}

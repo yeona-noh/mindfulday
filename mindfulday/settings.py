@@ -18,7 +18,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEBUG = os.getenv('DEBUG', 'False') == 'True'
+DEBUG = True
 
 
 ALLOWED_HOSTS = ["127.0.0.1", "localhost", "mindfulday-2c630495ca20.herokuapp.com"]
@@ -82,7 +82,6 @@ DATABASES = {
         'USER': os.getenv('DB_USER'),
         'PASSWORD': os.getenv('DB_PASSWORD'),
         'HOST': 'localhost',
-        'PORT': '5432'
     }
 }
 
@@ -138,7 +137,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
 STATICFILES_DIRS = [
@@ -146,19 +145,19 @@ STATICFILES_DIRS = [
 ]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWS_CREDENTIALS = True
 
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# if os.getcwd() == '/app':
-#     DEBUG = False
+if os.getcwd() == '/app':
+    DEBUG = False
 
 
 s3 = boto3.resource('s3')

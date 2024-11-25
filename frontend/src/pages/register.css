@@ -1,0 +1,50 @@
+.register {
+    background-image: url("../../public/img/registerbackground.png");
+    background-position: center;
+    background-size: cover;
+}
+.register-form {
+    background-color:  rgba(222, 231, 228, 0.483);
+    margin: 5rem auto;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 5px;
+    border: 1px solid var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.register-form h1{
+    font-size: 2.8rem;
+}
+.full-name {
+    width: 25rem;
+    height: 3.2rem;
+    margin-bottom: 1rem;
+}
+.email {
+    width: 25rem;
+    height: 3.2rem;
+    margin-bottom: 1rem;
+}
+.pwd {
+    width: 25rem;
+    height: 3.2rem;
+    margin-bottom: 1rem;
+}
+.cfm-pwd {
+    width: 25rem;
+    height: 3.2rem;
+    margin-bottom: 1rem;
+}
+.register-form button {
+    width: 25.5rem;
+    height: 3.2rem;
+    margin-bottom: 3rem;
+}
+.register-form hr {
+    width: 25rem;
+}
+.login-link {
+    color: var(--accent-color);
+}

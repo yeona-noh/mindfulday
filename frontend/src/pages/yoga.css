@@ -1,0 +1,76 @@
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.content-card {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+.content-link {
+    text-decoration: none;
+    color: black;
+}
+.content-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.content-thumbnail {
+    width: 100%;
+    height: 15rem;
+    border-bottom: 1px solid #ddd;
+}
+.content-title, .content-length {
+    padding: 10px;
+    margin: 0;
+}
+.description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.543);
+    color: #fff;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+.description.visible {
+    transform: translateY(0);
+    visibility: visible;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    opacity: 1;
+}
+.pagination-wrapper {
+    width: 20rem;
+    margin: auto;
+}
+.paginationBttns {
+    display: flex;
+    list-style: none;
+    font-size: 1.2rem;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.previousBttn {
+    padding: 0.5rem;
+}
+.paginationActive {
+    padding: 0.5rem;
+}   
+.paginationDisabled {
+    padding: 0.5rem;
+}
+.nextBttn {
+    padding: 0.5rem;
+}

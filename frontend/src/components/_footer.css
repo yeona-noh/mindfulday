@@ -1,0 +1,9 @@
+.footer-container {
+    min-width: 650px;
+    height: 2rem;
+    padding-bottom: 1rem;
+    bottom: 0;    
+}
+.footer {
+    text-align: center;
+}

@@ -21,7 +21,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "mindfulday-3a0d5349cc2b.herokuapp.com"]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "mindfulday-2c630495ca20.herokuapp.com"]
 
 
 

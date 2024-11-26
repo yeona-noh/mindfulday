@@ -5,11 +5,11 @@ from django.urls import path,include
 from . import views
 from accounts.views import CreateUserView
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
+    path('', TemplateView.as_view(template_name='index.html')),
     path('', include('meditate.urls')),
     path('', include('yoga.urls')),
     # path('', include('accounts.urls')),

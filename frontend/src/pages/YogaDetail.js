@@ -17,7 +17,7 @@ function YogaDetail() {
 
   const getYogaVideo = async () => {
     try {
-      let res = await axios.get(`http://localhost:8000/yoga/${id}`);
+      let res = await axios.get(`/yoga/${id}`);
       setYogaVideo(res.data);
 
 

@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes,Route } from "react-router-dom";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Home from "./pages/Home";
 import Yoga from "./pages/Yoga";
@@ -11,10 +11,10 @@ import MeditateDetail from "./pages/MeditateDetail";
 import _Footer from "./components/_Footer";
 
 function App() {
-  return (
+  return (    <Router>
     <div className="container">
       <div className="content">
-    <BrowserRouter>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/yoga" element={<Yoga />} />
@@ -38,10 +38,11 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
-    </BrowserRouter>
+    
     </div>
       <_Footer />
     </div>
+</Router>
   );
 }
 

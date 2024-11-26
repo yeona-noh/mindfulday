@@ -16,7 +16,7 @@ function MeditateDetail() {
 
   const getMeditateVideo = async () => {
     try {
-      let res = await axios.get(`http://localhost:8000/meditations/${id}`);
+      let res = await axios.get(`/meditations/${id}`);
       setMeditateVideo(res.data);
     } catch (error) {
       console.log(error, "getMeditateVideo detail failed");

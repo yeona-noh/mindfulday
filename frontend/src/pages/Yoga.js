@@ -71,7 +71,7 @@ function Yoga() {
 
   const getYogaVideo = async () => {
     try {
-      let res = await axios.get("http://localhost:8000/yoga/");
+      let res = await axios.get("/yoga/");
       setYogaVideo(res.data);
     } catch (error) {
       console.log(error);

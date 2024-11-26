@@ -7,7 +7,7 @@
     position: relative;
     width: 70rem;
     height: 45rem;
-    background-image: url('../../public/img/loginpage.jpg');
+    background-image: url('../../src/img/loginpage.jpg');
     background-position: center;
     background-size: cover;
     border-radius: 5px;
@@ -18,7 +18,7 @@
     height: 50px;
     margin-top: 3rem;
     margin-bottom: 0;
-    background-image: url("../../public/img/yogalogo.png");
+    background-image: url("../../src/img/yogalogo.png");
     background-position: center;
     background-size: contain;
     background-color: transparent;

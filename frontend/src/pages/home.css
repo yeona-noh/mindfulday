@@ -5,7 +5,7 @@
 }
 .home-intro {
     min-width: 650px;
-    background-image: url("../../public/img/main-yoga.jpg");
+    background-image: url("../../src/img/main-yoga.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -102,7 +102,7 @@
 .playbtn {
     width: 48px;
     height: 48px;
-    background: url("../../public/img/play-button.png") no-repeat center center;
+    background: url("../../src/img/play-button.png") no-repeat center center;
     background-size: contain;
 }
 .thumbnail-title {

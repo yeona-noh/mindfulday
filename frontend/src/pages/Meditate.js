@@ -71,7 +71,7 @@ const changePage = ({ selected }) => {
 
   const getMeditateVideo = async () => {
     try {
-      let res = await axios.get("http://localhost:8000/meditations/");
+      let res = await axios.get("/meditations/");
       setMeditateVideo(res.data);
     } catch (error) {
       console.log(error);

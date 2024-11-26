@@ -15,7 +15,7 @@ function Home() {
 
   const getYogaVideos = async () => {
     try {
-      let res = await axios.get("http://localhost:8000/yoga/");
+      let res = await axios.get("/yoga/");
       setYogaVideos(res.data.slice(-3));
     } catch (error) {
       console.log(error, "getYogavideos failed");
@@ -24,7 +24,7 @@ function Home() {
 
   const getMeditateVideos = async () => {
     try {
-      let res = await axios.get("http://localhost:8000/meditations/");
+      let res = await axios.get("/meditations/");
       setMeditateVideos(res.data.slice(-3));
     } catch (error) {
       console.log(error, "getMeditateVideo failed");

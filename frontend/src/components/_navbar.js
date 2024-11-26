@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./_navbar.css";
 import { ACCESS_TOKEN } from "../constants";
+import yogalogo from '../../src/img/yogalogo.png';
 function _navbar() {
 
   // 로그아웃 버튼을 눌렀을시 로컬스토리지에 저장된 엑세스코드 클리어 함수
@@ -18,7 +19,7 @@ function _navbar() {
     <div className="navbar-wrapper">
       <Link className="logo" to="/">
         <h1 className="logo">
-          <img className="logo-img" src="../img/yogalogo.png" />
+          <img className="logo-img" src={yogalogo} alt="lotus-icon"/>
           Mindfulday
         </h1>
       </Link>

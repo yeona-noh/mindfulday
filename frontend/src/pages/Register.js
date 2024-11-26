@@ -12,7 +12,7 @@ function Register() {
     try {
       if (password === confirmPassword) {
         try {
-          const res = await axios.post("http://localhost:8000/account/user/register/", {
+          const res = await axios.post("/account/user/register/", {
             "username": fullName,
             "password": password
           });

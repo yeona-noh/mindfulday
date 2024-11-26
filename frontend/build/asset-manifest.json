@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.afea458b.css",
-    "main.js": "/static/js/main.0585811a.js",
+    "main.js": "/static/js/main.2d93b94a.js",
     "static/media/loginpage.jpg": "/static/media/loginpage.431dbbb8e319ecf586a7.jpg",
     "static/media/main-yoga.jpg": "/static/media/main-yoga.cd83ffda244f08901f85.jpg",
     "static/media/registerbackground.png": "/static/media/registerbackground.53e84f53fe993a8e2bfd.png",
     "index.html": "/index.html",
     "main.afea458b.css.map": "/static/css/main.afea458b.css.map",
-    "main.0585811a.js.map": "/static/js/main.0585811a.js.map"
+    "main.2d93b94a.js.map": "/static/js/main.2d93b94a.js.map"
   },
   "entrypoints": [
     "static/css/main.afea458b.css",
-    "static/js/main.0585811a.js"
+    "static/js/main.2d93b94a.js"
   ]
 }

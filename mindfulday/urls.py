@@ -17,6 +17,10 @@ urlpatterns = [
     path('account/token/', TokenObtainPairView.as_view(), name='get_token'),
     path('account/token/refresh/', TokenRefreshView.as_view(), name='refresh'),
     path('account-auth/', include('rest_framework.urls')),
+    path('manifest.json', TemplateView.as_view(
+        template_name='manifest.json',
+        content_type='application/json'
+    ), name='manifest'),
 
 ]
 

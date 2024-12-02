@@ -5,7 +5,7 @@
 }
 .home-intro {
     min-width: 650px;
-    background-image: url("../img/main-yoga.jpg");
+    background-image: url("../../public/static/images/main-yoga.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;

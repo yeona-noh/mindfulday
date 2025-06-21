@@ -151,6 +151,11 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://mindfulday-2c630495ca20.herokuapp.com",
+]
+
+
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWS_CREDENTIALS = True
 
@@ -171,3 +176,5 @@ AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = 'mindfulday'
 AWS_REGION = 'us-east-2'
 
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True

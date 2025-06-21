@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import "./register.css";
 function Register() {
-  const [fullName, setFullName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -13,10 +14,17 @@ function Register() {
       if (password === confirmPassword) {
         try {
           const res = await axios.post("/account/user/register/", {
-            "username": fullName,
-            "password": password
+            "first_name": firstName,
+            "last_name": lastName,
+            "email": email,
+            "password": password,
+            
           });
-
+          setFirstName("")
+          setLastName("")
+          setEmail("")
+          setPassword("")
+          setConfirmPassword("")
         } catch (error) {
           console.log(error, "register failed")
         }
@@ -31,9 +39,15 @@ function Register() {
         <h1>Sign Up</h1>
         <input
           className="full-name"
-          placeholder="First and Last name"
-          value={fullName}
-          onChange={(e) => setFullName(e.target.value)}
+          placeholder="First name"
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
+        ></input>
+        <input
+          className="full-name"
+          placeholder="Last name"
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
         ></input>
         <input
           className="email"
